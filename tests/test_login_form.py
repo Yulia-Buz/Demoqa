@@ -29,12 +29,12 @@ def test_login_form(browser):
 
 # Задача №3 и ДЗ №9, пока не дается
 #     form_page.refresh()
-#     form_page.state.click()
-#     time.sleep(1)
+#     form_page.state.click_force()
+#     time.sleep(5)
 #     form_page.uttar.click_force()
-#     time.sleep(1)
+#     time.sleep(5)
 #     form_page.city.click()
-#     time.sleep(1)
+#     time.sleep(5)
 #     form_page.agra.click()
 
 

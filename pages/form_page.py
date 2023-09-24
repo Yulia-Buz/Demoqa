@@ -18,8 +18,8 @@ class FormPage(BasePage):
         self.current_address = WebElement(driver, '#currentAddress')
         # self.state = WebElement(driver, '#state > div > div.css-1wy0on6 > div > svg')
         # self.uttar = WebElement(driver, '#Uttar Pradesh')
-        # self.city = WebElement(driver, '#city > div > div.css-1wy0on6 > div > svg')
-        # self.agra = WebElement(driver, '#Agra')
+        # self.city = WebElement(driver, 'city > div > div.css-1wy0on6 > div > svg')
+        # self.agra = WebElement(driver, 'city > div > div.css-1hwfws3 > div.css-1uccc91-singleValue')
 
 
 
