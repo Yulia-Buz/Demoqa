@@ -23,13 +23,12 @@ def test_webtables(browser):
 
     web_tables.pencil.click()
     time.sleep(2)
-    assert web_tables.reg_form.exist()
+    assert web_tables.reg_form.exist() #не догадалась пока как проверить наличие данных в форме
     web_tables.first_name.clear()
     web_tables.first_name.send_keys('testers')
-    time.sleep(2)
     web_tables.submit_btn.click()
-    time.sleep(5)
-    assert web_tables.first_name_table.get_text() == "testers"
+    time.sleep(2)
+    assert web_tables.first_name_text.get_text() == "testers"
     web_tables.delete_btn.click()
     assert not web_tables.reg_form.exist()
 

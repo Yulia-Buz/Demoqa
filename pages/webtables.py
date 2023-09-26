@@ -17,7 +17,7 @@ class WebTables(BasePage):
         self.department = WebElement(driver, '#department')
         self.row = WebElement(driver, '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[2]/div[4]', 'xpath')
         self.pencil = WebElement(driver, '#edit-record-4 > svg')
-        self.first_name_table = WebElement(driver, '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[2]/div[4]/div/div[1]','xpath')
+        self.first_name_text = WebElement(driver, '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[2]/div[4]/div/div[1]','xpath')
         self.delete_btn = WebElement(driver, '#delete-record-4 > svg > path')
 
 
