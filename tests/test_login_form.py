@@ -1,6 +1,4 @@
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium import webdriver
+
 from pages.form_page import FormPage
 from conftest import browser
 import time
@@ -27,14 +25,13 @@ def test_login_form(browser):
     form_page.hobbies.click_force()
     form_page.current_address.send_keys('St.Petersburg, Russia')
 
-# Задача №3 и ДЗ №9, пока не дается
-#     form_page.refresh()
-#     form_page.state.click_force()
-#     time.sleep(5)
-#     form_page.uttar.click_force()
-#     time.sleep(5)
-#     form_page.city.click()
-#     time.sleep(5)
-#     form_page.agra.click()
+    form_page.refresh()
+    form_page.state.click()
+    time.sleep(5)
+    form_page.state_select.click_force()
+    time.sleep(5)
+    form_page.city.click()
+    time.sleep(5)
+    form_page.city_select.click_force()
 
 
