@@ -30,5 +30,6 @@ def test_webtables(browser):
     time.sleep(2)
     assert web_tables.first_name_text.get_text() == "testers"
     web_tables.delete_btn.click()
-    assert not web_tables.reg_form.exist()
+    time.sleep(2)
+    assert web_tables.row.get_text() == '       '
 
